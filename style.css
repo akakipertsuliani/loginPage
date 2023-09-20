@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  width: min(100vw, 1690px);
+  height: 100vh;
+  background-image: url(img/image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main #container {
+  width: clamp(350px, 40%, 50vw);
+  height: clamp(350px, 50%, 50vw);
+  border: 1px solid #FFF;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(20px);
+}
+#main #container h1 {
+  margin-block: auto;
+  font-family: monospace, sans-serif;
+  font-weight: 700;
+  color: #FFF;
+}
+#main #container .input-container {
+  margin-block: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  width: 85%;
+}
+#main #container .input-container .input-field {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-family: monospace, sans-serif;
+  color: #FFF;
+  border: 1px solid #FFF;
+  border-radius: 20px;
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+}
+#main #container .input-container .input-field::placeholder {
+  color: #FFF;
+}
+#main #container .input-container .submit {
+  background: #FFF;
+  color: #000;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+@media screen and (min-width: 768px) {
+  #main #container .input-container .submit:hover {
+    color: #FFF;
+    background: #975CE6;
+    border: 1px solid transparent;
+  }
+}
+#main #container .input-container .submit:active {
+  color: #FFF;
+  background: #975CE6;
+  border: 1px solid #330470;
+}
+#main #container h3 {
+  color: #FFF;
+  font-family: monospace, sans-serif;
+  font-weight: 700;
+}
+#main #container .text-container {
+  margin-block: auto;
+  display: flex;
+}
+#main #container .text-container p {
+  color: #FFF;
+  font-family: monospace, sans-serif;
+  font-weight: 700;
+}
+#main #container .text-container a {
+  text-decoration: none;
+  color: #04031E;
+  font-family: monospace, sans-serif;
+  font-weight: 700;
+  transition: 0.3s;
+}
+#main #container .text-container a:hover {
+  color: #7E7AF8;
+}
+#main #container .text-container a::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: #04031E;
+  opacity: 0;
+  transition: 0.3s;
+}
+@media screen and (min-width: 768px) {
+  #main #container .text-container a:hover::after {
+    background: #7E7AF8;
+    opacity: 100;
+  }
+}
+#main #container .text-container a:active::after {
+  background: #7E7AF8;
+  opacity: 100;
+}
+
+/*# sourceMappingURL=style.css.map */
